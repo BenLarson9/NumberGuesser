@@ -26,9 +26,9 @@
         </Label>
         <Button x:Name="StartButton" Content="Generate Random Number" HorizontalAlignment="Left" Margin="499,279,0,0" VerticalAlignment="Top" Width="182" Click="StartButton_Click"/>
         <Button x:Name="EnterButton" Content="Enter Guess" HorizontalAlignment="Left" Margin="88,264,0,0" VerticalAlignment="Top" Width="120" Click="EnterButton_Click"/>
-        <RadioButton x:Name="player1" Content="Player 1" HorizontalAlignment="Left" Margin="101,83,0,0" VerticalAlignment="Top" GroupName="Diff"/>
-        <RadioButton x:Name="player2" Content="Player 2" HorizontalAlignment="Left" Margin="101,103,0,0" VerticalAlignment="Top" GroupName="Diff"/>
-        <RadioButton x:Name="player3" Content="Player 3" HorizontalAlignment="Left" Margin="101,123,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton x:Name="player1" Content="Player 1" HorizontalAlignment="Left" Margin="101,83,0,0" VerticalAlignment="Top" GroupName="player"/>
+        <RadioButton x:Name="player2" Content="Player 2" HorizontalAlignment="Left" Margin="101,103,0,0" VerticalAlignment="Top" GroupName="player"/>
+        <RadioButton x:Name="player3" Content="Player 3" HorizontalAlignment="Left" Margin="101,123,0,0" VerticalAlignment="Top" GroupName="player"/>
         <Label Content="Select Player" HorizontalAlignment="Left" Margin="88,58,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
         <Label x:Name="rlb" Content="{}{Resjlt Label}" HorizontalAlignment="Left" Margin="331,256,0,0" VerticalAlignment="Top"/>
 

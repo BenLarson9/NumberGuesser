@@ -24,10 +24,17 @@ namespace NumberGuesser
         {
             InitializeComponent();
         }
-
+        Player player = new Player();
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-
+            player3.IsChecked = false;
+            while ((bool)!player3.IsChecked&& (bool)!player2.IsChecked && (bool)!player1.IsChecked)
+            {
+                rlb.Content = "No one is playing!";
+            }
+            if ((bool)player1.IsChecked) player.SetPlayer(1);
+            if ((bool)player2.IsChecked) player.SetPlayer(2);
+            if ((bool)player3.IsChecked) player.SetPlayer(3);
         }
 
         private void EnterButton_Click(object sender, RoutedEventArgs e)
