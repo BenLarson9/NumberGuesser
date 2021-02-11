@@ -10,9 +10,9 @@
         <Label Content="Pick a Number!" HorizontalContentAlignment ="Center" HorizontalAlignment="Left" Margin="331,40,0,0" VerticalAlignment="Top" Width="210" FontSize="20" FontWeight="Bold"/>
         <TextBox x:Name="EnterTextbox" HorizontalAlignment="Left" Margin="88,226,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="You get 20 guesses to try and find the number!" HorizontalAlignment="Left" Margin="295,82,0,0" VerticalAlignment="Top" Width="282" HorizontalContentAlignment ="Center"/>
-        <RadioButton Content="Baby Difficulty" HorizontalAlignment="Left" Margin="541,200,0,0" VerticalAlignment="Top" GroupName="Diff"/>
-        <RadioButton Content="Toddler Difficulty" HorizontalAlignment="Left" Margin="541,220,0,0" VerticalAlignment="Top" GroupName="Diff"/>
-        <RadioButton Content="Adult Difficulty" HorizontalAlignment="Left" Margin="541,240,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton x:Name="babybutton" Content="Baby Difficulty" HorizontalAlignment="Left" Margin="541,200,0,0" VerticalAlignment="Top" GroupName="Diff" Checked="babybutton_Checked"/>
+        <RadioButton x:Name="toddlerbutton" Content="Toddler Difficulty" HorizontalAlignment="Left" Margin="541,220,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton x:Name="adultbutton" Content="Adult Difficulty" HorizontalAlignment="Left" Margin="541,240,0,0" VerticalAlignment="Top" GroupName="Diff"/>
         <Label Content="Select Difficulty" HorizontalAlignment="Left" Margin="528,175,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
         <Label x:Name="EnterLabel" Content="Enter Your Guess Below" HorizontalAlignment="Left" Margin="67,195,0,0" VerticalAlignment="Top" Width="162" HorizontalContentAlignment ="Center" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
@@ -24,6 +24,13 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <Button x:Name="StartButton" Content="Generate Random Number" HorizontalAlignment="Left" Margin="499,279,0,0" VerticalAlignment="Top" Width="182" Click="StartButton_Click"/>
+        <Button x:Name="EnterButton" Content="Enter Guess" HorizontalAlignment="Left" Margin="88,264,0,0" VerticalAlignment="Top" Width="120" Click="EnterButton_Click"/>
+        <RadioButton x:Name="player1" Content="Player 1" HorizontalAlignment="Left" Margin="101,83,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton x:Name="player2" Content="Player 2" HorizontalAlignment="Left" Margin="101,103,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton x:Name="player3" Content="Player 3" HorizontalAlignment="Left" Margin="101,123,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <Label Content="Select Player" HorizontalAlignment="Left" Margin="88,58,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
+        <Label x:Name="rlb" Content="{}{Resjlt Label}" HorizontalAlignment="Left" Margin="331,256,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

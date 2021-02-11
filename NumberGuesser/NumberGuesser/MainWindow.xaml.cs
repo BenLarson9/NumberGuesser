@@ -24,5 +24,20 @@ namespace NumberGuesser
         {
             InitializeComponent();
         }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EnterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void babybutton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
