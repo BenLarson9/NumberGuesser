@@ -8,8 +8,22 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Content="Pick a Number!" HorizontalContentAlignment ="Center" HorizontalAlignment="Left" Margin="331,40,0,0" VerticalAlignment="Top" Width="210" FontSize="20" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="88,146,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="362,92,0,0" VerticalAlignment="Top" Width="148" HorizontalContentAlignment ="Center"/>
+        <TextBox x:Name="EnterTextbox" HorizontalAlignment="Left" Margin="88,226,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="You get 20 guesses to try and find the number!" HorizontalAlignment="Left" Margin="295,82,0,0" VerticalAlignment="Top" Width="282" HorizontalContentAlignment ="Center"/>
+        <RadioButton Content="Baby Difficulty" HorizontalAlignment="Left" Margin="541,200,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton Content="Toddler Difficulty" HorizontalAlignment="Left" Margin="541,220,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton Content="Adult Difficulty" HorizontalAlignment="Left" Margin="541,240,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <Label Content="Select Difficulty" HorizontalAlignment="Left" Margin="528,175,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
+        <Label x:Name="EnterLabel" Content="Enter Your Guess Below" HorizontalAlignment="Left" Margin="67,195,0,0" VerticalAlignment="Top" Width="162" HorizontalContentAlignment ="Center" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.081"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.472"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
     </Grid>
 </Window>
