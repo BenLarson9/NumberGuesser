@@ -20,6 +20,8 @@ namespace NumberGuesser
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        int number;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +37,31 @@ namespace NumberGuesser
             if ((bool)player1.IsChecked) player.SetPlayer(1);
             if ((bool)player2.IsChecked) player.SetPlayer(2);
             if ((bool)player3.IsChecked) player.SetPlayer(3);
+
+            if (babybutton.IsChecked == true)
+            {
+                Random randNum = new Random();
+                number = randNum.Next(1, 11);
+                //make all buttons disabled
+            }
+            else if (toddlerbutton.IsChecked == true)
+            {
+                Random randNum = new Random();
+                number = randNum.Next(1, 101);
+                //make all buttons disabled
+
+            }
+            else if (adultbutton.IsChecked == true)
+            {
+                Random randNum = new Random();
+                number = randNum.Next(1, 10001);
+                //make all buttons disabled
+
+            }
+            else
+            {
+                //need to make it repeat and not remove choices yet
+            }
         }
 
         private void EnterButton_Click(object sender, RoutedEventArgs e)
