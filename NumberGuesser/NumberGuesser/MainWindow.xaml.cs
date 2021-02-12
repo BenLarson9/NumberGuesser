@@ -25,8 +25,7 @@ namespace NumberGuesser
             InitializeComponent();
             EnterButton.IsEnabled = false;
         }
-<<<<<<< Updated upstream
-=======
+
         Player player = new Player();
         Game game = new Game();
         private void StartButton_Click(object sender, RoutedEventArgs e)
@@ -57,18 +56,26 @@ namespace NumberGuesser
 
         private void EnterButton_Click(object sender, RoutedEventArgs e)
         {
-            player.UseGuess(int.Parse(EnterTextbox.Text));
-            string highorlow = "";
-            if (game.CheckNumber(int.Parse(EnterTextbox.Text)) == false)
+            if (counter <= 20)
             {
-                if (game.isHighorLow() == true) highorlow = "Too High!";
-                else if (game.isHighorLow() == false) highorlow = "Too Low!";
+                player.UseGuess(int.Parse(EnterTextbox.Text));
+                string highorlow = "";
+                if (game.CheckNumber(int.Parse(EnterTextbox.Text)) == false)
+                {
+                    if (game.isHighorLow() == true) highorlow = "Too High!";
+                    else if (game.isHighorLow() == false) highorlow = "Too Low!";
+                }
+                rlb.Content += string.Format("Player {0} Guess #{1}: " + EnterTextbox.Text + "  " + highorlow + "\n", player.getPlayerNum(), counter);
+                if (game.CheckNumber(int.Parse(EnterTextbox.Text)) == true) { rlb.Content += "You Got it Bruh!"; EnterButton.IsEnabled = false; }
+                counter++;
             }
-            rlb.Content += string.Format("Player {0} Guess #{1}: " + EnterTextbox.Text +"  "+highorlow +"\n", player.getPlayerNum(), counter);
-            if (game.CheckNumber(int.Parse(EnterTextbox.Text)) == true){ rlb.Content += "You Got it Bruh!"; EnterButton.IsEnabled = false; }
-            counter++;
+            else
+            {
+                rlb.Content = "Your out of guesses!\n\nYou Lost!";
+                EnterButton.IsEnabled = false;
+            }
+
         }
 
->>>>>>> Stashed changes
     }
 }

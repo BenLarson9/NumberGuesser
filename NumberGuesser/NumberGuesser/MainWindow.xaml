@@ -7,11 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-<<<<<<< Updated upstream
-        <Label Content="Pick a Number!" HorizontalContentAlignment ="Center" HorizontalAlignment="Left" Margin="331,40,0,0" VerticalAlignment="Top" Width="210" FontSize="20" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="88,146,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="362,92,0,0" VerticalAlignment="Top" Width="148" HorizontalContentAlignment ="Center"/>
-=======
         <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="360" Margin="400,35,0,0" VerticalAlignment="Top" Width="379"/>
 
         <Label Content="Pick a Number!" HorizontalContentAlignment ="Center" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" Width="210" FontSize="20" FontWeight="Bold"/>
@@ -37,8 +32,7 @@
         <RadioButton x:Name="player2" Content="Player 2" HorizontalAlignment="Left" Margin="42,191,0,0" VerticalAlignment="Top" GroupName="player"/>
         <RadioButton x:Name="player3" Content="Player 3" HorizontalAlignment="Left" Margin="42,211,0,0" VerticalAlignment="Top" GroupName="player"/>
         <Label Content="Select Player" HorizontalAlignment="Left" Margin="29,146,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
-        <Label x:Name="rlb" Content="" HorizontalAlignment="Left" Margin="400,35,0,0" VerticalAlignment="Top"/>
->>>>>>> Stashed changes
+        <Label x:Name="rlb" Content="" HorizontalAlignment="Left" Margin="400,35,0,0" VerticalAlignment="Top" Width="379"/>
 
     </Grid>
 </Window>
