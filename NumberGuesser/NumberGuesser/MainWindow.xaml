@@ -12,7 +12,7 @@
         <Label Content="Pick a Number!" HorizontalContentAlignment ="Center" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" Width="210" FontSize="20" FontWeight="Bold"/>
         <TextBox x:Name="EnterTextbox" HorizontalAlignment="Left" Margin="86,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="You get 20 guesses to try and find the number!" HorizontalAlignment="Left" Margin="50,53,0,0" VerticalAlignment="Top" Width="282" HorizontalContentAlignment ="Center"/>
-        <RadioButton x:Name="babybutton" Content="Baby Difficulty" HorizontalAlignment="Left" Margin="233,171,0,0" VerticalAlignment="Top" GroupName="Diff"/>
+        <RadioButton x:Name="babybutton" Content="Baby Difficulty" HorizontalAlignment="Left" Margin="233,171,0,0" VerticalAlignment="Top" GroupName="Diff" Checked="babybutton_Checked"/>
         <RadioButton x:Name="toddlerbutton" Content="Toddler Difficulty" HorizontalAlignment="Left" Margin="233,191,0,0" VerticalAlignment="Top" GroupName="Diff"/>
         <RadioButton x:Name="adultbutton" Content="Adult Difficulty" HorizontalAlignment="Left" Margin="233,211,0,0" VerticalAlignment="Top" GroupName="Diff"/>
         <Label Content="Select Difficulty" HorizontalAlignment="Left" Margin="220,146,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
@@ -33,6 +33,7 @@
         <RadioButton x:Name="player3" Content="Player 3" HorizontalAlignment="Left" Margin="42,211,0,0" VerticalAlignment="Top" GroupName="player"/>
         <Label Content="Select Player" HorizontalAlignment="Left" Margin="29,146,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment ="Center" FontWeight="Bold"/>
         <Label x:Name="rlb" Content="" HorizontalAlignment="Left" Margin="400,35,0,0" VerticalAlignment="Top" Width="379"/>
+        <Button x:Name="resetbutton" Content="Reset" HorizontalAlignment="Left" Margin="351,375,0,0" VerticalAlignment="Top" Click="resetbutton_Click"/>
 
     </Grid>
 </Window>

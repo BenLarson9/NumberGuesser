@@ -74,8 +74,20 @@ namespace NumberGuesser
                 rlb.Content = "Your out of guesses!\n\nYou Lost!";
                 EnterButton.IsEnabled = false;
             }
+            EnterTextbox.Text = "";
+        }
+
+        private void babybutton_Checked(object sender, RoutedEventArgs e)
+        {
 
         }
 
+        private void resetbutton_Click(object sender, RoutedEventArgs e)
+        {
+            EnterTextbox.Text = "";
+            StartButton.IsEnabled = true;
+            EnterButton.IsEnabled = false;
+
+        }
     }
 }
