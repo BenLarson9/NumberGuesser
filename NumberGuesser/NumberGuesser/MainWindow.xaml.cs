@@ -87,6 +87,7 @@ namespace NumberGuesser
             EnterTextbox.Text = "";
             StartButton.IsEnabled = true;
             EnterButton.IsEnabled = false;
+            counter = 1;
 
         }
     }

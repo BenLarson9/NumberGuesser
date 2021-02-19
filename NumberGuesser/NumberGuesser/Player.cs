@@ -7,7 +7,6 @@ namespace NumberGuesser
     class Player
     {
         Game game = new Game();
-        private int guesses = 20;
         private int playerNum;
         public void SetPlayer(int i)
         {
